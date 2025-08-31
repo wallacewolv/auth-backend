@@ -1,8 +1,8 @@
-import dotenv from 'dotenv';
-import express from 'express';
+import dotenv from "dotenv";
+import express from "express";
 
-import { connectDB } from './db/connect-db.js';
-import { authRoutes } from './routes/auth.routes.js';
+import { connectDB } from "./db/connect-db.js";
+import { authRoutes } from "./routes/auth.routes.js";
 
 dotenv.config();
 
