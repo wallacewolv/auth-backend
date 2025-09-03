@@ -1,6 +1,7 @@
 import express from "express";
 
 import {
+  forgotPassword,
   login,
   logout,
   signup,
@@ -13,3 +14,4 @@ authRoutes.post("/signup", signup);
 authRoutes.post("/verify-email", verifyEmail);
 authRoutes.post("/login", login);
 authRoutes.post("/logout", logout);
+authRoutes.post("/forgot-password", forgotPassword);

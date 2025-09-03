@@ -43,3 +43,23 @@ export const sendWelcomeEmail = async (email, name) => {
     throw new Error(errorMessage);
   }
 };
+
+export const sendPasswordResetEmail = async (email, resetURL) => {
+  const recipient = [{ email }];
+
+  try {
+    const response = await mailtrapClient.send({
+      from: sender,
+      to: recipient,
+      subject: "Reset your password",
+      html: emailTemplate.PASSWORD_RESET_REQUEST(resetURL),
+      category: "Password Reset",
+    });
+
+    console.log("Password reset email sent successfully:", response);
+  } catch (error) {
+    const errorMessage = `Error sending password reset email: ${error}`;
+    console.log(errorMessage);
+    throw new Error(errorMessage);
+  }
+};
