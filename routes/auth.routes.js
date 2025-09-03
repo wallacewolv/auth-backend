@@ -8,8 +8,11 @@ import {
   signup,
   verifyEmail,
 } from "../controllers/auth.controller.js";
+import { verifyToken } from "../middleware/verify-token.js";
 
 export const authRoutes = express.Router();
+
+authRoutes.post("/check-auth", verifyToken, checkAuth);
 
 authRoutes.post("/signup", signup);
 authRoutes.post("/login", login);
