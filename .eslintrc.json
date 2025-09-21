@@ -1,0 +1,48 @@
+{
+  "plugins": ["prettier", "eslint-plugin-import-helpers", "@typescript-eslint"],
+  "env": {
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["standard", "plugin:prettier/recommended", "plugin:@typescript-eslint/eslint-recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "array-callback-return": 0,
+    "no-useless-constructor": 0,
+    "no-use-before-define": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePatter":"^_",
+        "varsIgnorePatter":"^_"
+      }
+    ],
+    "prettier/prettier":[
+      "error",
+      {
+        "printWidth": 80,
+        "tabWidth": 2,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "arrowParens": "always",
+        "semi": false,
+        "endOfLine": "auto"
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always", // new line between groups
+        "groups": ["module", "/^@shared/", ["parents", "sibling", "index"]],
+        "alphabetize": { "order" : "asc", "ignoreCase": true }
+      }
+    ],
+    "no-console": 1
+  }
+}

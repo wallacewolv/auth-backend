@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "prettier.config.js",
+    "node_modules",
+    "./build",
+    "global.d.ts",
+    "jest.config.ts",
+    "jest.setup.ts",
+    "tests",
+    "coverage"
+  ]
+}
