@@ -6,7 +6,7 @@ import {
   sendResetSuccessEmail,
   sendVerificationEmail,
   sendWelcomeEmail,
-} from "../mailtrap/emails.js";
+} from "../mail/emails.js";
 import { User } from "../models/user.model.js";
 import { generateTokenAndSetCookie } from "../utils/generate-token-and-set-cookie.js";
 
