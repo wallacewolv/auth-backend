@@ -96,48 +96,41 @@ export const emailTemplate = {
   `,
 
   WELCOME_EMAIL: (companyName, name) => `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Welcome to ${companyName}</title>
-    </head>
-    <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-      <div style="background: linear-gradient(to right, #4CAF50, #45a049); padding: 20px; text-align: center;">
-        <h1 style="color: white; margin: 0;">${companyName}</h1>
-      </div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to ${companyName}</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
+    <div style="background: linear-gradient(to right, #4CAF50, #45a049); padding: 20px; text-align: center;">
+      <h1 style="color: white; margin: 0;">${companyName}</h1>
+    </div>
 
-      <div style="background-color: #f9f9f9; padding: 20px; border-radius: 0 0 5px 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
-        <img src="https://via.placeholder.com/150" alt="${companyName} Logo" style="margin-bottom: 20px; width: 150px; height: auto; border-radius: 10px;" />
+    <div style="background-color: #f9f9f9; padding: 20px; border-radius: 0 0 5px 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+      <img src="cid:authentication" alt="${companyName} Logo" style="margin-bottom: 20px; width: 150px; height: auto; border-radius: 10px;" />
 
-        <h2>Welcome, ${name}!</h2>
-        <p>Thanks for choosing ${companyName}! We are happy to see you on board.</p>
+      <h2>Welcome, ${name}!</h2>
+      <p>Thanks for choosing ${companyName}! We are happy to see you on board.</p>
 
-        <p>To get started, do this next step:</p>
-        <a href="#" style="display: inline-block; background-color: #4CAF50; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 20px 0;">Next Step</a>
+      <p>To get started, do this next step:</p>
+      <a href="#" style="display: inline-block; background-color: #4CAF50; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 20px 0;">Next Step</a>
 
-        <p>If you need some help to get started, check our:</p>
-
-        <div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
-          <div>
-            <img src="https://via.placeholder.com/100" alt="Dto Form Builder Tutorial" style="width: 100px; height: auto; border-radius: 5px;" />
-            <p>Dto Form Builder Tutorial</p>
-          </div>
-          <div>
-            <img src="https://via.placeholder.com/100" alt="Financial App Clone" style="width: 100px; height: auto; border-radius: 5px;" />
-            <p>Financial App Clone</p>
-          </div>
+      <div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
+        <div>
+          <img src="cid:forms" alt="Dto Form Builder Tutorial" style="width: 100px; height: auto; border-radius: 5px;" />
+          <p>Dto Form Builder Tutorial</p>
         </div>
-
-        <p>We hope you enjoy this journey as much as we enjoy creating it for you.</p>
-        <p><a href="#" style="color: #888; font-size: 0.8em; text-decoration: underline;">Unsubscribe</a></p>
+        <div>
+          <img src="cid:financial" alt="Financial App Clone" style="width: 100px; height: auto; border-radius: 5px;" />
+          <p>Financial App Clone</p>
+        </div>
       </div>
 
-      <div style="text-align: center; margin-top: 20px; color: #888; font-size: 0.8em;">
-        <p>This is an automated message, please do not reply to this email.</p>
-      </div>
-    </body>
-    </html>
+      <p><a href="#" style="color: #888; font-size: 0.8em; text-decoration: underline;">Unsubscribe</a></p>
+    </div>
+  </body>
+  </html>
   `,
 };
